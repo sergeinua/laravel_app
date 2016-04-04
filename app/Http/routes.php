@@ -33,3 +33,7 @@ Route::group(['middleware' => ['web']], function () {
 Route::auth();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/hall', 'HallController@index');
+
+Route::get('/hall/show/{id}', 'HallController@show');
