@@ -48,7 +48,7 @@
                 <!-- Left Side Of Navbar -->
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
-                    <li><a href="{{ url('hall/index') }}">Halls</a></li>
+                    <li><a href="{{ url('hall') }}">Halls</a></li>
                     <li><a href="{{ url('/users') }}">Users</a></li>
                 </ul>
 

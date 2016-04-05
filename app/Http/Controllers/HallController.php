@@ -51,8 +51,7 @@ class HallController extends Controller
     {
         $model = Hall::findOrFail($id);
 
-        dump($model);die;
-
+        return view('hall.show', ['model' => $model]);
 
     }
 
