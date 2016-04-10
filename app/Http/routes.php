@@ -37,3 +37,5 @@ Route::get('/home', 'HomeController@index');
 Route::get('/hall', 'HallController@index');
 
 Route::get('/hall/show/{id}', 'HallController@show');
+
+Route::get('/user', 'UserController@index');

@@ -49,7 +49,9 @@
                 <ul class="nav navbar-nav">
                     <li><a href="{{ url('/home') }}">Home</a></li>
                     <li><a href="{{ url('hall') }}">Halls</a></li>
-                    <li><a href="{{ url('/users') }}">Users</a></li>
+                    @if(Auth::user()->role =='admin')
+                        <li><a href="{{ url('/user') }}">Users</a></li>
+                    @endif
                 </ul>
 
                 <!-- Right Side Of Navbar -->
